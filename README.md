@@ -37,4 +37,10 @@ npm run dev
 
 ## Deployment
 
-Every push to `main` builds the site and deploys it to GitHub Pages through `.github/workflows/deploy.yml`. To move to Cloudflare Pages later, point it at this repo with build command `npm run build` and output directory `dist`, and change `base` in `vite.config.ts` to `/`.
+This app is configured for Vercel. Import the repo into Vercel and use the default Vite settings:
+
+- Build command: `npm run build`
+- Output directory: `dist`
+- Framework preset: Vite
+
+The frontend is served from the root URL, so `vite.config.ts` uses `base: '/'` instead of the GitHub Pages subpath.
