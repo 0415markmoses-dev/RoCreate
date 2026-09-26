@@ -46,16 +46,16 @@ DATABASE_URL = (
     or os.environ.get("POSTGRES_PRISMA_URL")
     or ""
 )
-SESSION_SECRET = os.environ.get("SESSION_SECRET", "")
-ROBLOX_CLIENT_ID = os.environ.get("ROBLOX_CLIENT_ID", "")
-ROBLOX_CLIENT_SECRET = os.environ.get("ROBLOX_CLIENT_SECRET", "")
-PUBLIC_API_URL = os.environ.get("PUBLIC_API_URL", "https://rostats-api.vercel.app").rstrip("/")
-SITE_URL = os.environ.get("SITE_URL", "https://matetheakhaladze.github.io/RoStats/")
+SESSION_SECRET = os.environ.get("SESSION_SECRET", "ro-create-session-secret")
+ROBLOX_CLIENT_ID = os.environ.get("ROBLOX_CLIENT_ID", "1356233570470060873")
+ROBLOX_CLIENT_SECRET = os.environ.get("ROBLOX_CLIENT_SECRET", "RBX-AMc9L6UlYEKjRz83Tu5v9_O-rfZG3CMsWr6VRDZRZKJrSAbdEQRkp1gO1Cx8hDhu")
+PUBLIC_API_URL = os.environ.get("PUBLIC_API_URL", "https://ro-create-backend.vercel.app").rstrip("/")
+SITE_URL = os.environ.get("SITE_URL", "https://ro-create.vercel.app/").rstrip("/") + "/"
 ALLOWED_RETURN_ORIGINS = [
     o.strip().rstrip("/")
     for o in os.environ.get(
         "ALLOWED_RETURN_ORIGINS",
-        "https://matetheakhaladze.github.io,http://localhost:5173,http://localhost:4173",
+        "https://ro-create.vercel.app,http://localhost:5173,http://localhost:4173",
     ).split(",")
     if o.strip()
 ]
