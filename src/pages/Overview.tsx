@@ -64,7 +64,7 @@ export default function Overview() {
         <EmptyState
           icon={<Gamepad2 size={24} />}
           title="Add your first game"
-          text="Paste your game's Roblox link in Settings. RoStats shows its live stats right away, and you can upload Creator Dashboard exports for deeper analytics."
+          text="Paste your game's Roblox link in Settings. Ro-Create shows its live stats right away, and you can upload Creator Dashboard exports for deeper analytics."
           action={<Link to="/app/settings" className="btn btn-primary">Add a game</Link>}
         />
       </div>

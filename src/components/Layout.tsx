@@ -30,21 +30,14 @@ const nav = [
 ]
 
 export function LogoMark({ size = 28 }: { size?: number }) {
-  return (
-    <svg width={size} height={size} viewBox="0 0 32 32" aria-hidden="true">
-      <rect width="32" height="32" rx="8" fill="var(--accent-fill)" />
-      <rect x="7" y="17" width="4" height="8" rx="1.2" fill="var(--on-accent)" />
-      <rect x="14" y="12" width="4" height="13" rx="1.2" fill="var(--on-accent)" />
-      <rect x="21" y="7" width="4" height="18" rx="1.2" fill="var(--on-accent)" />
-    </svg>
-  )
+  return <img src="/ro-create-logo.png" alt="" width={size} height={size} className="block rounded-[8px] object-cover" />
 }
 
 export function Logo({ size = 28 }: { size?: number }) {
   return (
     <span className="inline-flex items-center gap-2 font-semibold">
       <LogoMark size={size} />
-      RoStats
+      Ro-Create
     </span>
   )
 }
@@ -59,7 +52,7 @@ function SignIn() {
     <div className="flex min-h-full items-center justify-center p-6">
       <div className="card w-full max-w-sm p-8 text-center">
         <div className="flex justify-center"><Logo size={36} /></div>
-        <h1 className="mt-6 text-xl font-semibold">Sign in to RoStats</h1>
+        <h1 className="mt-6 text-xl font-semibold">Sign in to Ro-Create</h1>
         <p className="mt-2 text-sm text-muted">Use your Roblox account. We only read your public profile: name and avatar.</p>
         <RobloxButton className="mt-6 w-full" />
         {error && <p className="mt-4 text-xs text-bad">{error}</p>}

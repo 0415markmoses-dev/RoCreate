@@ -7,7 +7,7 @@ import { useAuth } from '../lib/auth'
 import { ThemeToggle } from '../lib/theme'
 
 const features = [
-  { icon: Upload, title: 'Creator Dashboard import', text: 'Export CSVs from the Roblox Creator Dashboard and drop them in. RoStats charts them and points out what matters.' },
+  { icon: Upload, title: 'Creator Dashboard import', text: 'Export CSVs from the Roblox Creator Dashboard and drop them in. Ro-Create charts them and points out what matters.' },
   { icon: BarChart3, title: 'Players and retention', text: 'Visits, concurrents, retention and session time from your own exports, with week over week changes.' },
   { icon: Coins, title: 'Monetization', text: 'Robux revenue, game passes and developer products side by side, with AI notes on what is selling.' },
   { icon: TrendingUp, title: 'Rising games', text: 'Games gaining players fast right now, with an AI breakdown of why they grow and what you can copy.' },
@@ -173,7 +173,7 @@ export default function Landing() {
             <span className="inline-flex items-center gap-2 text-sm font-medium text-accent"><LineChart size={16} />Market Trends</span>
             <h2 className="mt-3 text-3xl font-semibold tracking-tight">Know what is taking off before everyone copies it</h2>
             <p className="mt-4 text-muted">
-              RoStats watches player counts across Roblox and flags games that are climbing fast. For each one, the AI explains the hook, the trend it rides and how its title and icon win clicks, then lists what you can take from it.
+              Ro-Create watches player counts across Roblox and flags games that are climbing fast. For each one, the AI explains the hook, the trend it rides and how its title and icon win clicks, then lists what you can take from it.
             </p>
             <ul className="mt-6 space-y-3 text-sm">
               {['Rising games with 24 hour player change', 'Leaderboards for +1, brainrot, tsunami, obby and more', 'Search any keyword, like "evolve" or "fishing"'].map((t) => (
